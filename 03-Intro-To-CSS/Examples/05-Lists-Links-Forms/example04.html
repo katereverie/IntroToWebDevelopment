@@ -2,6 +2,58 @@
 <head>
     <title>Styling Tables</title>
     <style>
+      table {
+        
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table caption {
+        font-size: x-large;
+      }
+
+      thead th {
+        text-align: left;
+        font-size: larger;
+      }
+      thead th:nth-child(1) {
+        width: 30%;
+      }
+      thead th:nth-child(2) {
+        width: 10%;
+      }
+      thead th:nth-child(3) {
+        width: 10%;
+      }
+      thead th:nth-child(4) {
+        width: 30%;
+      }
+
+      th, td {
+        padding: 20px;
+      }
+
+      tfoot td {
+        font-weight: bold;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: grey;
+      }
+
+      thead tr,
+      tfoot tr {
+        background-color: black;
+        color: white;
+      }
+
+      table caption {
+        font-size: x-large;
+        padding: 20px;
+        font-style: italic;
+        color: orange;
+        caption-side: bottom;
+      }
         
     </style>
 </head>

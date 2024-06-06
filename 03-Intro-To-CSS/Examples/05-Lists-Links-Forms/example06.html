@@ -20,6 +20,56 @@
             width: 90%;
             margin: auto;
         }
+
+        form {
+          max-width: 480px;
+          padding: 20px;
+        }
+
+        form div {
+          margin-bottom: 10px;
+        }
+
+        .form-footer {
+          text-align: center;
+        }
+
+        .form-footer button {
+          border: none;
+          padding: 8px 15px;
+          background: #FF8500;
+          color: #fff;
+          box-shadow: 1px 1px 4px #DADADA;
+          border-radius: 3px;
+        }
+        .form-footer button:hover{
+          background: #EA7B00;
+        }
+
+        label {
+          display: inline-block;
+          width: 25%;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+          border: 1px solid #c2c2c2;
+          box-shadow: 1px 1px 4px #ebebeb;
+          border-radius: 3px;
+          padding: 7px;
+          outline: none;
+          width: 70%;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+          border: 1px solid #2d5cf8;
+        }
+        
     </style>
 </head>
 <body>
@@ -48,7 +98,7 @@
                 <label for="newsletter">Subscribe to newsletter</label>
                 <input id="newsletter" name="newsletter" type="checkbox">
             </div>
-            <div>
+            <div class="form-footer">
                 <button>Submit</button>
             </div>
         </form> 
